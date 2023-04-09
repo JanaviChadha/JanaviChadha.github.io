@@ -601,12 +601,14 @@ section {
   left: 0;
   right: 0;
   height: 0;
-  transition: ease-in-out 0.3s;
+  /* transition: ease-in-out 0.3s; */
   z-index: -1;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transform: translateY(-2px);
 }
 
 .services .icon-box:hover::before {
-  background: hsl(170, 66%, 51%);
+  background: hsl(0, 0%, 100%);
   height: 100%;
   border-radius: 0px;
 }
@@ -646,11 +648,11 @@ section {
 }
 
 .services .icon-box:hover .title a, .services .icon-box:hover .description {
-  color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 0%);
 }
 
 .services .icon-box:hover .icon {
-  background: hsl(0, 0%, 100%);
+  background: hsl(170, 66%, 51%)
 }
 
 .services .icon-box:hover .icon i {
